@@ -1,0 +1,71 @@
+.characters {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+}
+
+.character {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #0C356A;
+}
+
+.character .name {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    font-size: 1.05rem;
+}
+
+.character .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.character .detail .personal_data {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.character .detail .personal_data .data {
+    background-color: #0174BE;
+    color: #fff;
+    padding: 0.25rem .5rem;
+    margin: .25rem 0;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+    .characters {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .characters {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url('https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707868800&semt=ais');
+    }
+
+    .characters {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

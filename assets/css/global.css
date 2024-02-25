@@ -1,0 +1,42 @@
+* {
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url('https://img.freepik.com/fotos-gratis/ceu-estrelado_1048-11828.jpg?size=626&ext=jpg&ga=GA1.1.87170709.1707868800&semt=ais');
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #F3F8FF;
+}
+
+
+h1, h2, h3{
+    color: #FFC436;
+    font-family: 'Bebas Neue', 'Roboto';
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+h3{
+    color: #0C356A;
+    font-family: 'Bebas Neue', 'Roboto';
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
